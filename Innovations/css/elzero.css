@@ -286,7 +286,7 @@ ul {
   transform-origin: top left;
 }
 .landing .container {
-  min-height: calc(100vh - 72px);
+  min-height: calc(70vh - 70px);
   display: flex;
   align-items: center;
   padding-bottom: 120px;
@@ -341,12 +341,24 @@ ul {
 }
 .landing .image img {
   position: relative;
-  width: 600px;
+  width: 90%;
   animation: up-and-down 5s linear infinite;
+  padding-top: 10px;
+  margin-top: 20px;
+  margin-left: 15px;
 }
-@media (max-width: 991px) {
+@media (max-width: 767px) {
   .landing .image {
     /* display: none; */
+    width: 400px;
+  }
+}
+@media (max-width: 991px ) {
+  .landing .container .image img {
+    width: 400px;
+    margin-top: 10px;
+    padding-right: 0px;
+    margin-left: 0px;
   }
 }
 .landing .go-down {
